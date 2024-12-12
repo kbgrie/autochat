@@ -1,0 +1,7 @@
+local delay = _G.delay or 30
+local text = _G.text or 'a c c v 4 full gear cyborg , a c c v4 1 gear tai store1st . c o m'
+
+game:GetService('ReplicatedStorage'):WaitForChild('DefaultChatSystemChatEvents'):WaitForChild('SayMessageRequest'):FireServer(text, 'All')
+while task.wait(delay) do
+    game:GetService('ReplicatedStorage'):WaitForChild('DefaultChatSystemChatEvents'):WaitForChild('SayMessageRequest'):FireServer(text, 'All')
+end
